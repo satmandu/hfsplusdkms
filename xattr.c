@@ -9,6 +9,7 @@
 #include "hfsplus_fs.h"
 #include <linux/posix_acl_xattr.h>
 #include <linux/nls.h>
+#include <linux/pagemap.h>
 #include "xattr.h"
 #include "acl.h"
 
