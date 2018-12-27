@@ -1,1 +1,0 @@
-#define WRITE_SYNC		(REQ_SYNC | REQ_NOIDLE)
