@@ -620,7 +620,7 @@ int hfsplus_journaled_get_block(struct page *page)
   sector_t iblock;
   s32 block_num = -1;
   
-  iblock = page->index << (PAGE_CACHE_SHIFT - inode->i_blkbits);
+  iblock = page->index << (PAGE_SHIFT - inode->i_blkbits);
   ablock = iblock >> HFSPLUS_SB(sb)->fs_shift;
   if (ablock < hip->first_blocks) {
     block_num = hfsplus_ext_find_block(hip->first_extents, ablock);
