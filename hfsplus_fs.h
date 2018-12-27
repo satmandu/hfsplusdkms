@@ -381,6 +381,9 @@ static inline unsigned short hfsplus_min_io_size(struct super_block *sb)
 		     HFSPLUS_SECTOR_SIZE);
 }
 
+#define HFSPLUS_WRITE_SYNC		(REQ_SYNC | REQ_NOIDLE)
+
+
 #define hfs_btree_open hfsplus_btree_open
 #define hfs_btree_close hfsplus_btree_close
 #define hfs_btree_write hfsplus_btree_write
